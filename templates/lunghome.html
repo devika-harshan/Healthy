@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block testbody %}
+<h1 style="text-align:center;">Lung Cancer Prediction</h1>
+<h5 style="text-align:center;">Please enter the patient details</h5>
+  <form action="{{ url_for('lungpredict')}}" method="post" class="form-inline">
+    <fieldset>
+      <div class="tabcontent" id="new">
+        <div class="form-group">
+          <label for="GENDER">GENDER </label>
+          <input type="text" class="form-control" name="GENDER" required="required">
+        </div>
+        <div class="form-group">
+          <label for="AGE">AGE</label>
+          <input type="text" class="form-control" name="AGE" required="required">
+        </div>
+        <div class="form-group">
+          <label for="SMOKING">SMOKING</label>
+          <input type="text" class="form-control" name="SMOKING" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="YELLOW_FINGERS">YELLOW_FINGERS</label>
+          <input type="text" class="form-control" name="YELLOW_FINGERS" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="ANXIETY">ANXIETY</label>
+          <input type="text" class="form-control" name="ANXIETY" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="PEER_PRESSURE">PEER_PRESSURE</label>
+          <input type="text" class="form-control" name="PEER_PRESSURE" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="CHRONIC DISEASE">CHRONIC DISEASE</label>
+          <input type="text" class="form-control" name="CHRONIC DISEASE" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="FATIGUE">FATIGUE</label>
+          <input type="text" class="form-control" name="FATIGUE" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="ALLERGY">ALLERGY</label>
+          <input type="text" class="form-control" name="ALLERGY" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="WHEEZING">WHEEZING</label>
+          <input type="text" class="form-control" name="WHEEZING" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="ALCOHOL CONSUMING">ALCOHOL CONSUMING</label>
+          <input type="text" class="form-control" name="ALCOHOL CONSUMING" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="COUGHING">COUGHING</label>
+          <input type="text" class="form-control" name="COUGHING" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="SHORTNESS OF BREATH">SHORTNESS OF BREATH</label>
+          <input type="text" class="form-control" name="SHORTNESS OF BREATH" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="SWALLOWING DIFFICULTY">SWALLOWING DIFFICULTY</label>
+          <input type="text" class="form-control" name="SWALLOWING DIFFICULTY" required="required" />
+        </div>
+        <div class="form-group">
+          <label for="CHEST PAIN">CHEST PAIN</label>
+          <input type="text" class="form-control" name="CHEST PAIN" required="required" />
+        </div>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+          type="submit" class="btn btn-primary btn-lg">Predict</button>
+      </div>
+    </fieldset>
+  </form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+{% endblock testbody %}
