@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block testbody %}
+<h1 style="text-align:center;">Check Your Health Insurance Cost </h1>
+<h5 style="text-align:center;">Please enter the patient details</h5>
+<form action="{{ url_for('ipredict')}}" method="post" class="form-inline">
+    <fieldset>
+        <div class="tabcontent" id="new">
+           
+      
+          <div class="form-group">
+            <label for="Age">Age</label>
+            <input class="form-control" type="number" id="age" name="age" required="required" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <label for="_name">Gender</label>
+          <input class="form-control" type="number" id="_name" name="Gender" required="required" placeholder="0 - Male/1 - Female">
+        </div>
+
+        <div class="form-group">
+          <label for="last_name">BMI</label>
+          <input class="form-control" type="number" id="last_name" name="bmi" required="required" placeholder="BMI">
+        </div>
+
+        <div class="form-group">
+          <label for="children">Children</label>
+          <input class="form-control" id="children" name="children" placeholder="0 for None"  type="text" required="required">
+        </div>
+
+        <div class="form-group">
+          <label for="smoker">Do you Smoke?</label>
+          <input class="form-control" id="smoker" name="smoker" placeholder="1 - Yes/0 - No" type="text"  required="required">
+        </div>
+
+        <div class="form-group">
+          <label for="smoker">Which Region?</label>
+          <input class="form-control" id="region" name="region" placeholder="0-NW/1-NE/2-SE/3-SW" type="text"  required="required">
+        </div> 
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
+                type="submit" class="btn btn-primary btn-lg">Predict</button>
+        </div>
+    </fieldset>
+</form>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+{% endblock testbody %}
+       
+       
+       
+       
+
+        
+    

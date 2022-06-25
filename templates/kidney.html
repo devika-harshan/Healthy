@@ -1,0 +1,54 @@
+
+    {% extends 'base.html' %}
+    {% block testbody %}
+
+    <h1 style="text-align:center;">Kidney Disease Prediction</h1>
+    <h5 style="text-align:center;">Please enter the patient details</h5>
+
+    <form action="{{ url_for('predictkidney')}}" method="post" class="form-inline">
+        <fieldset>
+            <div class="tabcontent" id="new">
+                <div class="form-group">
+                    <label for="bp">Blood Pressure</label>
+                    <input class="form-control" type="number" id="bp" name="Year" required="required" placeholder="Blood Pressure">
+                </div>
+
+                <div class="form-group">
+                    <label for="sg">Specific Gravity</label>
+                    <input class="form-control" type="number" step="any" id="sg" name="sg" required="required" placeholder="Specific Gravity">
+                </div>
+
+                <div class="form-group">
+                    <label for="al">Albumin</label>
+                    <input class="form-control" type="number" id="al" name="al" required="required" placeholder="Albumin">
+                </div>
+
+                <div class="form-group">
+                    <label for="su">Blood Sugar Level</label>
+                    <input class="form-control" type="number" id="su" name="su" required="required" placeholder="Blood Sugar Level">
+                </div>
+
+                <div class="form-group">
+                    <label for="rbc">Red Blood Cells Count</label>
+                    <input class="form-control" type="number" id="rbc" name="rbc" required="required" placeholder="Red Blood Cells Count">
+                </div>
+
+                <div class="form-group">
+                    <label for="pc">Pus Cell Count</label>
+                    <input class="form-control" type="number" id="pc" name="pc" required="required" placeholder="Pus Cell Count">
+                </div>
+
+                <div class="form-group">
+                    <label for="pcc">Pus Cell Clumps</label>
+                    <input class="form-control" type="number" id="pcc" name="pcc" required="required" placeholder="Pus Cell Clumps">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-primary btn-lg">Predict</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    {% endblock testbody %}
